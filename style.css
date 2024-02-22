@@ -90,7 +90,7 @@ article .picture img {
      object-fit: cover;
   border-radius: 20px;
 }
-article .picture figcaption {
+article .caption {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -100,7 +100,7 @@ article .picture figcaption {
   border-radius: 20px;
   font-size: 3em;
 }
-article .picture .time {
+article .time {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -247,7 +247,8 @@ footer {
   margin-bottom: 2rem;
 }
 
-input[type=email], input[type=password] {
+input[type=email],
+input[type=password] {
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 4px;

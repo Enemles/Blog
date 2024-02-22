@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css" >
   </head>
   <body>
-    <header role="banner">
+    <header>
       <div class="center">
         <a href="./index.html">
           <img src="./assets/bmw-logo.svg" alt="Logo BMW" >
         </a>
-        <nav role="navigation">
+        <nav>
           <ul>
             <li><a href="./article.html">Article</a></li>
             <li><a href="./login.html">Login</a></li>
@@ -20,18 +20,22 @@
         </nav>
       </div>
     </header>
-    <main role="main">
+    <main>
       <section>
         <h2>Articles</h2>
-        <article role="article">
-          <a class="picture" href="./article.html" aria-label="Lire l'article 1">
+        <article>
+          <a
+            class="picture"
+            href="./article.html"
+            aria-label="Lire l'article 1"
+          >
             <picture>
               <source srcset="./assets/sunset.webp" type="image/webp" >
               <source srcset="./assets/sunset.jpg" type="image/jpeg" >
               <img src="./assets/sunset.jpg" alt="BMW M3 E46" >
-              <figcaption>M3 E46</figcaption>
-              <div class="time">21 fév. 2024</div>
             </picture>
+            <div class="caption">M3 E46</div>
+            <div class="time">21 fév. 2024</div>
           </a>
 
           <div class="p-4">
@@ -58,15 +62,19 @@
             </div>
           </div>
         </article>
-        <article role="article">
-          <a class="picture" href="./article.html" aria-label="Lire l'article 2">
+        <article>
+          <a
+            class="picture"
+            href="./article.html"
+            aria-label="Lire l'article 2"
+          >
             <picture>
               <source srcset="./assets/sunset.webp" type="image/webp" >
               <source srcset="./assets/sunset.jpg" type="image/jpeg" >
               <img src="./assets/sunset.jpg" alt="BMW M3 E46" >
-              <figcaption>M3 E46</figcaption>
-              <div class="time">21 fév. 2024</div>
             </picture>
+            <div class="caption">M3 E46</div>
+            <div class="time">21 fév. 2024</div>
           </a>
 
           <div class="p-4">
@@ -95,6 +103,6 @@
         </article>
       </section>
     </main>
-    <footer role="contentinfo">© 2024 Blog BMW M3 E46</footer>
+    <footer>© 2024 Blog BMW M3 E46</footer>
   </body>
 </html>
