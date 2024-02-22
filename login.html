@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Blog BMW M3 E46</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="center">
+        <a href="./index.html">
+          <img src="./assets/bmw-logo.svg" alt="Logo BMW" />
+        </a>
+        <nav role="navigation">
+          <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./article.html">Article</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="login-container">
+      <form action="./index.html" method="get" class="login-form">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-required="true"
+        />
+
+        <label for="password">Mot de passe :</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          aria-required="true"
+        />
+
+        <button type="submit" class="login-button">Se connecter</button>
+      </form>
+    </main>
+    <footer role="contentinfo">© 2024 Blog BMW M3 E46</footer>
+  </body>
+</html>

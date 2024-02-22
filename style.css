@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .center {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header .center img {
+  height: 50px;
+}
+header .center nav {
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+header .center nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .center nav ul li a {
+  color: black;
+}
+header .center nav ul li:not(:last-child) {
+  position: relative;
+}
+header .center nav ul li:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  margin-left: 5px;
+  color: black;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+h2 {
+  grid-column: 1/-1;
+}
+
+article {
+  grid-column: 1/-1;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+}
+article picture {
+  width: 50%;
+  position: relative;
+}
+article picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+article picture figcaption {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f7fafc;
+  border-radius: 20px;
+  font-size: 3em;
+}
+article picture .time {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f7fafc;
+  border-radius: 20px;
+  font-size: 1em;
+}
+article .p-4 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+article .p-4 .top {
+  background-color: #d1ff75;
+  border-radius: 20px;
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+article .p-4 .top .mt-4 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+article .p-4 .top .mt-4 a {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+article .p-4 .bottom {
+  display: flex;
+  gap: 10px;
+}
+article .p-4 .bottom img {
+  border-radius: 20px;
+  width: 50%;
+}
+article h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+article a {
+  color: black;
+  transition: 0.3s;
+}
+article a:hover {
+  color: #2b6cb0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #d1ff75;
+  color: black;
+  height: 90px;
+}
+
+.detailed-article {
+  margin: auto;
+  background-color: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  border-radius: 0;
+  display: flex;
+  gap: 20px;
+}
+.detailed-article figure img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detailed-article .p-4 {
+  padding: 1rem;
+}
+.detailed-article .p-4 h2 {
+  margin-top: 0.5rem;
+}
+.detailed-article .p-4 p {
+  margin: 1rem 0;
+}
+
+.specifications h3 {
+  grid-column: 1/-1;
+}
+.specifications table {
+  grid-column: 1/-1;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.specifications th,
+.specifications td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.specifications th {
+  background-color: #f4f4f4;
+}
+.specifications tfoot td {
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+#commentaires h3 {
+  grid-column: 1/-1;
+}
+#commentaires .commentaire p {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#commentaires .commentaire p time {
+  font-size: 10px;
+}
+
+.login-container {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+input[type=email], input[type=password] {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #2d3748;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #4a5568;
+}/*# sourceMappingURL=style.css.map */
