@@ -9,12 +9,12 @@
   <body>
     <header>
       <div class="center">
-        <a href="./index.html">
+        <a href="./index.html" title="retour à la page d'accueil" aria-label="blog m3" aria-current="true">
           <img src="./assets/bmw-logo.svg" alt="Logo BMW" >
         </a>
-        <nav>
+        <nav aria-label="principal">
           <ul>
-            <li><a href="./article.html">Article</a></li>
+            <li><a href="./article.html">Article</a> <span aria-hidden="true">•</span></li>
             <li><a href="./login.html">Login</a></li>
           </ul>
         </nav>
@@ -22,12 +22,12 @@
     </header>
     <main>
       <section>
-        <h2>Articles</h2>
+        <h1>Articles</h1>
         <article>
           <a
             class="picture"
             href="./article.html"
-            aria-label="Lire l'article 1"
+            aria-label="Article 1"
           >
             <picture>
               <source srcset="./assets/sunset.webp" type="image/webp" >
@@ -40,18 +40,18 @@
 
           <div class="p-4">
             <div class="top">
-              <a href="./article.html" aria-label="Lire l'article 1">
-                <h3>Titre de l'article 1</h3>
+              <a href="./article.html" aria-label="Article 1">
+                <h2>Titre de l'article 1</h2>
               </a>
               <p>Description courte de l'article 1...</p>
               <div class="mt-4">
-                <a href="./article.html" aria-label="Lire l'article 1"
+                <a href="./article.html" aria-label="Article 1"
                   >Lire l'article</a
                 >
                 <a
                   href="./article.html#commentaires"
                   class="ml-4"
-                  aria-label="Lire les 2 commentaires sur l'article Titre de l'article 1"
+                  aria-label="2 commentaires sur l'article Titre de l'article 1"
                   >2 Commentaires</a
                 >
               </div>
@@ -66,7 +66,7 @@
           <a
             class="picture"
             href="./article.html"
-            aria-label="Lire l'article 2"
+            aria-label="Article 2"
           >
             <picture>
               <source srcset="./assets/sunset.webp" type="image/webp" >
@@ -79,12 +79,12 @@
 
           <div class="p-4">
             <div class="top">
-              <a href="./article.html" aria-label="Lire l'article 2">
-                <h3>Titre de l'article 2</h3>
+              <a href="./article.html" aria-label="Article 2">
+                <h2>Titre de l'article 2</h2>
               </a>
               <p>Description courte de l'article 2...</p>
               <div class="mt-4">
-                <a href="./article.html" aria-label="Lire l'article 2"
+                <a href="./article.html" aria-label="Article 2"
                   >Lire l'article</a
                 >
                 <a

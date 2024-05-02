@@ -45,14 +45,8 @@ header {
           a {
             color: black;
           }
-          &:not(:last-child) {
-            position: relative;
-            &::after {
-              content: '•';
-              position: absolute;
-              margin-left: 5px;
-              color: black;
-            }
+          span{
+            color: black;
           }
         }
       }
@@ -184,6 +178,7 @@ footer {
   border-radius: 0;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   figure {
     img {
